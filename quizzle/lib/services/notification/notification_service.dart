@@ -81,7 +81,6 @@ class NotificationService extends GetxService {
         payload: payload);
   }
 
-
   Future<String?> _downloadAndSaveFile(String url, String fileName) async {
     try {
       final Directory directory = await getApplicationDocumentsDirectory();

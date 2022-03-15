@@ -56,7 +56,8 @@ extension QuizeResult on QuizController {
     Get.find<NotificationService>().showQuizCompletedNotification(
         id: 1,
         title: quizPaperModel.title,
-        body:  'You have just got $points points for ${quizPaperModel.title} -  Tap here to view leaderboard' ,
+        body:
+            'You have just got $points points for ${quizPaperModel.title} -  Tap here to view leaderboard',
         imageUrl: quizPaperModel.imageUrl,
         payload: json.encode(quizPaperModel.toJson()));
     navigateToHome();
